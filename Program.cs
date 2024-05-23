@@ -10,7 +10,7 @@ Console.WriteLine("Opcion: ");
 string opcion = Console.ReadLine();
 int op;
 int resultado=0;
-int band=0;
+int band=1;
 do
 {
 if (int.TryParse(opcion, out op))

@@ -1,6 +1,48 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 
+
+
+    // Variables para almacenar valores ingresados por el usuario
+    float numero1, numero2;
+
+    // Solicitar y validar el primer número
+    Console.WriteLine("Ingrese un número:");
+    while (!float.TryParse(Console.ReadLine(), out numero1))
+    {
+        Console.WriteLine("Error: Ingrese un número válido.");
+    }
+
+    // Mostrar operaciones para el primer número
+    Console.WriteLine("\nOperaciones para el primer número:");
+    Console.WriteLine($"Valor absoluto: {Math.Abs(numero1)}");
+    Console.WriteLine($"Cuadrado: {Math.Pow(numero1, 2)}");
+    Console.WriteLine($"Raíz cuadrada: {Math.Sqrt(numero1)}");
+    Console.WriteLine($"Seno: {Math.Sin(numero1)}");
+    Console.WriteLine($"Coseno: {Math.Cos(numero1)}");
+    Console.WriteLine($"Parte entera: {Math.Floor(numero1)}");
+
+    // Solicitar y validar el segundo número
+    Console.WriteLine("\nIngrese otro número:");
+    while (!float.TryParse(Console.ReadLine(), out numero2))
+    {
+        Console.WriteLine("Error: Ingrese un número válido.");
+    }
+
+    // Determinar y mostrar el máximo y mínimo
+    Console.WriteLine("\nOperaciones entre los dos números:");
+    Console.WriteLine($"Máximo: {Math.Max(numero1, numero2)}");
+    Console.WriteLine($"Mínimo: {Math.Min(numero1, numero2)}");
+
+
+
+
+
+
+
+
+/*EJERCICIO 2:
+
 Console.WriteLine("¿que operacion desea realizar?");
 Console.WriteLine("1)-Sumar");
 Console.WriteLine("2)-Restar");
@@ -49,6 +91,7 @@ band= Convert.ToInt32(bandera);
 
 
 } while (band==1);
+FIN EJERCICIO 2*/
 
 
 
